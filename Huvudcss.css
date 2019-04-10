@@ -1,5 +1,63 @@
-/*
-Här kommer css vara
+/*Header och nav -- André*/
+header {
+  background-image: linear-gradient(-90deg,blue,#1e3f5a);
+  width: 100%;
+  height: 15vh;
+}
 
-Test!!!
-*/
+nav {
+  background-image: linear-gradient(90deg,blue,#1e3f5a);
+}
+
+nav a {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0);
+    transition-duration: 1.3s;
+    transition-property: background-color;
+    transition-timing-function: ease;
+  }
+
+  /*Gör bakrunden till orange på tiden angiven i nav a ovan */
+  nav a:hover {
+    background-color: orange;
+  }
+  
+  header h1{
+    float: left;
+    color: #f2f2f2;
+    text-decoration: none;
+  }
+
+  /*för att få listan att vara horizontel*/
+  .HorizontalUL {
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
+    bottom: 0;
+  }
+
+  .HorizontalUL li {
+    display: inline-block
+   }
+
+   section {
+       width: 80%;
+       height: 60vh;
+       border: 7px solid Black;
+       border-radius: 20px;
+       margin: auto;
+   }
+  
+  .column {
+    float: left;
+    width: 48%;
+    padding: 5px;
+  }
+  
+
+  
