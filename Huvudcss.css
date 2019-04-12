@@ -47,7 +47,7 @@ nav a {
 
    section {
        width: 80%;
-       height: 60vh;
+       height: 50vh;
        border: 7px solid Black;
        border-radius: 20px;
        margin: auto;
@@ -58,6 +58,26 @@ nav a {
     width: 48%;
     padding: 5px;
   }
-  
 
+  .column2 {
+    float: left;
+    width: 23%;
+    padding: 5px;
+  }
+  
+  footer {
+    width: 80%;
+    height: 20vh;
+    border: 7px solid Black;
+    border-radius: 20px;
+    margin: auto;
+}
+
+.loggotyper {
+  max-height: 19vh;
+}
+
+.Bilbilder {
+  max-height: 24vh;
+}
   
