@@ -5,8 +5,17 @@ header {
   height: 15vh;
 }
 
+.HeaderTysklan {
+  background-image: url("tysklands-flagga.png");
+  background-size: contain;
+}
+
 nav {
   background-image: linear-gradient(90deg,blue,#1e3f5a);
+}
+
+.navTyskland {
+  background-image: linear-gradient(90deg,black,black);
 }
 
 nav a {
@@ -75,9 +84,20 @@ nav a {
 
 .loggotyper {
   max-height: 19vh;
+  max-width: 100%;
 }
 
 .Bilbilder {
   max-height: 24vh;
+  max-width: 100%;
+}
+
+.center {
+  text-align: center;
+}
+
+.columnBilsidor {
+  float: left;
+  width: 33.33%;
 }
   
