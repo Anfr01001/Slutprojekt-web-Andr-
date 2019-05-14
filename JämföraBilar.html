@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 
 <head>
     <meta charset="UTF-8">
@@ -11,7 +11,7 @@
 </head>
 
 <body>
-
+<!-- Huvudmenyn som alla sidor delar -->
     <header>
         <nav>
             <ul class="HorizontalUL">
@@ -28,7 +28,7 @@
                     <a href="#"  class="Aktivsida">Jämförelser</a>
                 </li>
                 <li>
-                    <a href="#">Bilens histora</a>
+                    <a href="Mer.html">Bilens histora</a>
                 </li>
             </ul>
         </nav>
@@ -37,23 +37,47 @@
     </header>
     <br>
 
+    <!-- Kort beskrivande text -->
     <h2 class="center">Jämförelse av Bilar</h2>
     <p class="center">I tabellen nedan kan likvärdiga bilar jämföras. Modellerna som jämförs är märkens populärare bilar.</p>
+    <p class="center">Bilmärkerna som jämförs är:</p>
+    
+    <!-- En så kallad description list där dt är huvudsaken och dd besktiver huvudsaken -->
+    <br>
+        <dl class="center">
+            <dt>BMW</dt>
+            <dd>3-serie 20i</dd>
+            <dt>Audi</dt>
+            <dd>A4 2.0</dd>
+            <dt>Mercedes</dt>
+            <dd>C-klass 200</dd>
+            <dt>Renault</dt>
+            <dd> Megane 130</dd>
+            <dt>Peugeot</dt>
+            <dd>308 1.2</dd>
+            <dt>Citroen</dt>
+            <dd> C4 spacetourer 130</dd>
+        </dl>
 
     <br>
 
+<main>
+    <!-- Huvudinehållet på sidan som är en zebra tabell -->
     <table>
-        <tr>
-            <th>Märke</th>
-            <th>Modell</th>
-            <th>Pris</th>
-            <th>Beräknad Månadskostnad</th>
-            <th>Bränsle förbrukning</th>
-            <th>Hästkrafter</th>
-            <th>Topp hastighet</th>
-            <th>Lastvolym</th>
-            <th>Säkerhet (EuroNCAP)</th>
-        </tr>
+      <thead>
+         <tr>
+            <th scope="col">Märke</th>
+            <th scope="col">Modell</th>
+            <th scope="col">Pris</th>
+            <th scope="col">Beräknad Månadskostnad</th>
+            <th scope="col">Bränsle förbrukning</th>
+            <th scope="col">Hästkrafter</th>
+            <th scope="col">Topp hastighet</th>
+            <th scope="col">Lastvolym</th>
+            <th scope="col">Säkerhet (EuroNCAP)</th>
+        </tr> 
+      </thead>
+      <tbody> 
         <tr>
             <td>BMW</td>
             <td>3-serie 20i</td>
@@ -120,23 +144,26 @@
             <td>537L</td>
             <td>5 / 5</td>
         </tr>
+      </tbody>
       </table>
-
+    </main>
 <br>
 
     <section>
+        <h2 class = "center">Klicka på någon av bilderna för att läsa mer om bilen</h2>
         <div class="row">
             <div class="column3spalt">
-                <img class="BilbilderStartsida" src="Bilar/audi bil.jpg" alt="Bild på audi bil">
-                <img class="BilbilderStartsida" src="Bilar/renault bil.jpg" alt="Bild på bmw bil">
+                <img class="BilbilderStartsida" src="Bilar/audibil.jpg" alt="Bild på audi bil">
+                <img class="BilbilderStartsida" src="Bilar/renaultbil.jpg" alt="Bild på bmw bil">
+            </div>
         </div>
         <div class="column3spalt">
                 <img class="BilbilderStartsida" src="Bilar/BMWbil.jpeg" alt="Bild på renault bil">
-                <img class="BilbilderStartsida" src="Bilar/peugeot bil.jpg" alt="Bild på peugeot bil">
+                <img class="BilbilderStartsida" src="Bilar/peugeotbil.jpg" alt="Bild på peugeot bil">
         </div>
         <div class="column3spalt">
-                <img class="BilbilderStartsida" src="Bilar/mercedes bil.jpg" alt="Bild på renault bil">
-                <img class="BilbilderStartsida" src="Bilar/citroen bil.jpg" alt="Bild på peugeot bil">
+                <img class="BilbilderStartsida" src="Bilar/mercedesbil.jpg" alt="Bild på renault bil">
+                <img class="BilbilderStartsida" src="Bilar/citroenbil.jpg" alt="Bild på peugeot bil">
         </div>
     </section>
       

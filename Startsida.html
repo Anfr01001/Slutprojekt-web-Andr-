@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 
 <head>
     <meta charset="UTF-8">
@@ -11,7 +11,7 @@
 </head>
 
 <body>
-
+    <!-- Huvudmenyn som alla sidor delar -->
     <header>
         <nav>
             <ul class="HorizontalUL">
@@ -28,7 +28,7 @@
                     <a href="JämföraBilar.html">Jämförelser</a>
                 </li>
                 <li>
-                    <a href="#">Bilens histora</a>
+                    <a href="Mer.html">Bilens histora</a>
                 </li>
             </ul>
         </nav>
@@ -37,62 +37,69 @@
     </header>
     <br>
 
-
+    <!-- Tre spaltslayout mer 6st biler (2lager) -->
     <section>
+            <h2 class = "center">Klicka på någon av bilderna för att läsa mer om bilen</h2>
         <div class="row">
             <div class="column3spalt">
-                <img class="BilbilderStartsida" src="Bilar/audi bil.jpg" alt="Bild på audi bil">
-                <img class="BilbilderStartsida" src="Bilar/renault bil.jpg" alt="Bild på bmw bil">
-        </div>
-        <div class="column3spalt">
+                <img class="BilbilderStartsida" src="Bilar/audibil.jpg" alt="Bild på audi bil">
+                <img class="BilbilderStartsida" src="Bilar/renaultbil.jpg" alt="Bild på bmw bil">
+            </div>
+            <div class="column3spalt">
                 <img class="BilbilderStartsida" src="Bilar/BMWbil.jpeg" alt="Bild på renault bil">
-                <img class="BilbilderStartsida" src="Bilar/peugeot bil.jpg" alt="Bild på peugeot bil">
-        </div>
-        <div class="column3spalt">
-                <img class="BilbilderStartsida" src="Bilar/mercedes bil.jpg" alt="Bild på renault bil">
-                <img class="BilbilderStartsida" src="Bilar/citroen bil.jpg" alt="Bild på peugeot bil">
+                <img class="BilbilderStartsida" src="Bilar/peugeotbil.jpg" alt="Bild på peugeot bil">
+            </div>
+            <div class="column3spalt">
+                <img class="BilbilderStartsida" src="Bilar/mercedesbil.jpg" alt="Bild på renault bil">
+                <img class="BilbilderStartsida" src="Bilar/citroenbil.jpg" alt="Bild på peugeot bil">
+            </div>
         </div>
     </section>
 
-   <br>
+    <!-- Kort info i form av text h2 för att fånga användarens blick -->
+    <br>
     <h2 class="center">Översikt några franska och tyska bilar</h2>
     <p class="center">Denna hemsida kommer ge dig en generall överblick vad några vanliga bilmärken står för samt jämföra dem med varndra.</p>
     <p class="center">Klicka på något av märkena nedan</p>
-   <br>
+    <br>
+
+    <!-- En lokal footer som visar logotyper på samma sätt som bil bilderna -->
     <footer>
-    <div class="row">
-        <div class="column6spalt">
-            <a href = "Tyskabilar.html">
-             
-             <img class="loggotyper" src="Loggotyper/Audilogga.jpg" alt="Audi logga">  
-            </a>
-        </div>
-        <div class="column6spalt">
-                <a href = "Tyskabilar.html">
-                <img class="loggotyper" src="Loggotyper/BMWlogga.png" alt="BMW logga"> 
-                </a>
-            </div>
-        <div class="column6spalt">
-                    <a href = "Tyskabilar.html">
-                            <img class="loggotyper" src="Loggotyper/mercerderslogga.jpg" alt="mercerders logga" >
-                    </a>
-            </div>
-        <div class="column6spalt">
-                    <a href = "Franskabilar.html">
-                    <img class="loggotyper" src="Loggotyper/peugeotlogga.jpg" alt="peugeot logga" >
+        <figure>
+            <div class="row">
+                <div class="column6spalt">
+                    <a href="Tyskabilar.html">
+
+                        <img class="loggotyper" src="Loggotyper/Audilogga.jpg" alt="Audi logga">
                     </a>
                 </div>
-        <div class="column6spalt">
-                    <a href = "Franskabilar.html">
+                <div class="column6spalt">
+                    <a href="Tyskabilar.html">
+                        <img class="loggotyper" src="Loggotyper/BMWlogga.png" alt="BMW logga">
+                    </a>
+                </div>
+                <div class="column6spalt">
+                    <a href="Tyskabilar.html">
+                        <img class="loggotyper" src="Loggotyper/mercerderslogga.jpg" alt="mercerders logga">
+                    </a>
+                </div>
+                <div class="column6spalt">
+                    <a href="Franskabilar.html">
+                        <img class="loggotyper" src="Loggotyper/peugeotlogga.jpg" alt="peugeot logga">
+                    </a>
+                </div>
+                <div class="column6spalt">
+                    <a href="Franskabilar.html">
                         <img class="loggotyper" src="Loggotyper/Renultlogga.jpg" alt="Renult logga">
                     </a>
-            </div>
-            <div class="column6spalt">
-                    <a href = "Franskabilar.html">
-                    <img class="loggotyper" src="Loggotyper/citroen logga.png" alt="citroen logga" >
+                </div>
+                <div class="column6spalt">
+                    <a href="Franskabilar.html">
+                        <img class="loggotyper" src="Loggotyper/citroenlogga.png" alt="citroen logga">
                     </a>
+                </div>
             </div>
-    </div>
+        </figure>
     </footer>
 
 </body>

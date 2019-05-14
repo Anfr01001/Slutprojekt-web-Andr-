@@ -1,10 +1,11 @@
-/*Header och nav -- André*/
 
+  /*Påverkar alla sidor*/
 *{
-  margin: 0px;
+  margin: 0ex;
   font-family: 'Oswald', sans-serif;
 }
 
+  /*Tre olika header (en vanlig och de 2 flaggorna för respektive land)*/
 header {
   background-image: linear-gradient(90deg,black,#252136);
   width: 100%;
@@ -21,12 +22,13 @@ header {
   background-size: cover;
 }
 
+  /*Samma som header olika länders nav ser olika ut*/
 nav {
-  background-image: linear-gradient(90deg,black,#252136);
+  background-image: linear-gradient(90deg,hsla(0,0%,0%,0.9),#252136);
 }
 
 .navTyskland {
-  background-image: linear-gradient(90deg,black,black);
+  background-image: linear-gradient(90deg, hsl(0, 0%, 0%),black);
 }
 
 .navFrankrike {
@@ -34,6 +36,7 @@ nav {
   background-size: cover;
 }
 
+  /*Nav properties och förbereder transition om användare håller på meny alternativ*/
 nav a {
     display: block;
     color:#ffffff;
@@ -41,7 +44,7 @@ nav a {
     padding: 14px;
     text-decoration: none;
     background-color: rgba(0, 0, 0, 0);
-    transition-duration: 1.3s;
+    transition-duration: 2s;
     transition-property: background-color;
     transition-timing-function: ease;
 }
@@ -89,6 +92,8 @@ nav a {
        margin: auto;
    }
   
+
+  /*Alla olika tre och 6 spaltslayouts*/
   .column3spalt {
     float: left;
     width: 31%;
@@ -109,6 +114,7 @@ nav a {
     margin: auto;
 }
 
+  /*Här kontrolleras storleken på bilderna så att de ska anpassa sig och se Ok ut*/
 .loggotyper {
   max-height: 20vh;
   max-width: 100%;
@@ -125,6 +131,7 @@ nav a {
   max-width: 100%;
 }
 
+  /*för att göra det lätt att få saker till mitten*/
 .center {
   text-align: center;
 }
@@ -136,10 +143,12 @@ nav a {
   border-radius: 10px;
 }
 
+  /*Ändrar bakrundsgärgen på den aktiva sidan i menyn*/
 .Aktivsida {
   background-color: gray;
 }
   
+  /*för zebra tabellen*/
 tr:nth-child(even) {
   background-color: #f2f2f2
 }
@@ -148,9 +157,23 @@ table {
   margin: auto;
 }
 
-
 table, th, td {
   border: 1px solid black;
-  border-collapse: collapse;
+  border-collapse: separate;
   padding: 10px;
 }
+
+  /*Youtube video*/
+iframe {
+  width: 560px; 
+  height: 315px;
+}
+
+  /*Fixar så att bilsidorna anpassar sig om skärmen blir för liten*/
+@media only screen and (max-width: 700px) {
+  .columnBilsidor {
+    width: 100%;
+    border: 10px solid 	#303030;
+    border-radius: 10px;
+  }
+} 
