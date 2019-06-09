@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,88 +8,101 @@
     <link rel="stylesheet" type="text/css" href="Huvudcss.css">
     <title>Mer om bilar och hemsidan</title>
 </head>
+
 <body>
-        <header>
-            <!-- Huvudmenyn som alla sidor delar -->
-                <nav>
-                    <ul class="HorizontalUL">
-                        <li>
-                            <a href="Startsida.html">Startsida</a>
-                        </li>
-                        <li>
-                            <a href="Tyskabilar.html">Tyska bilar</a>
-                        </li>
-                        <li>
-                            <a href="Franskabilar.html">Franska bilar</a>
-                        </li>
-                        <li>
-                            <a href="JämföraBilar.html">Jämförelser</a>
-                        </li>
-                        <li>
-                            <a href="#" class="Aktivsida">Mer</a>
-                        </li>
-                    </ul>
-                </nav>
-                <!-- Sidans "namn" -->
-                <h1>Mer om bilar och hemsidan</h1>
-            </header>
+    <header>
+        <!-- Huvudmenyn som alla sidor delar -->
+        <nav>
+            <ul class="HorizontalUL">
+                <li>
+                    <a href="Startsida.html">Startsida</a>
+                </li>
+                <li>
+                    <a href="Tyskabilar.html">Tyska bilar</a>
+                </li>
+                <li>
+                    <a href="Franskabilar.html">Franska bilar</a>
+                </li>
+                <li>
+                    <a href="JämföraBilar.html">Jämförelser</a>
+                </li>
+                <li>
+                    <a href="#" class="Aktivsida">Mer</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Sidans "namn" -->
+        <h1>Mer om bilar och hemsidan</h1>
+    </header>
 
+    <br>
+    <!-- En video från youtube -->
+    <h2>En video som förklarar historien bakom bilen.</h2>
+    <iframe src="https://www.youtube.com/embed/Rb3E8GI0vNM"></iframe>
+
+    <br>
+    <br>
+    <br>
+
+    <!-- Här kan man spela upp en ljudfil -->
+    <h2>Här kan du höra hur en bilmorot låter</h2>
+    <audio controls>
+        <source src="Carsound.mp3" type="audio/mpeg">
+    </audio>
+
+    <br>
+    <br>
+    <br>
+
+    <!-- Ett formulär där använderen kan säga va de tycker om hemsidan -->
+    <h2>Var sidan till hjälp?</h2>
+    <form>
+        <fieldset>
+            <legend>Din åsikt om hemsidan</legend>
+            <p>Vad var bra med hemsidan?</p>
+            <input type="text" name="Bra" value="Skriv något bra">
             <br>
-            <!-- En video från youtube -->
-            <h2>En video som förklarar historien bakom bilen.</h2>
-            <iframe  src="https://www.youtube.com/embed/Rb3E8GI0vNM"></iframe>
-            
-            <br><br><br>
+            <p>Ditt kön</p>
+            <input type="radio" name="kön" value="Man" checked> Man
+            <br>
+            <input type="radio" name="kön" value="Kvinna"> Kvinna
+            <br>
+            <br>
+            <p>Vilka sidor var användbara</p>
+            <input type="checkbox" name="Sida1" value="Sida1"> I have a bike
+            <br>
+            <input type="checkbox" name="Sida2" value="Sida2"> I have a car
+            <br>
+            <input type="checkbox" name="Sida3" value="Sida3"> I have a boat
+            <br>
+            <input type="checkbox" name="Sida4" value="Sida4"> I have a boat
+            <br>
+            <input type="checkbox" name="Sida5" value="Sida5"> I have a boat
+            <br>
+            <br>
+            <p>Skriv in ditt telefonnummer</p>
+            <input type="tel" name="Telefonnummer" value="0728471177" required>
+            <p>Länka till en bättre sida än denna:</p>
+            <input type="url" name="url" value="" required>
+            <br>
+            <p>Vilket märke är din favorit?</p>
+            <select>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+                <option value="BMW">BMW</option>
+                <option value="Renault">Renault</option>
+                <option value="Peugeot">Peugeot</option>
+                <option value="Citroen">Citroen</option>
+            </select>
+            <br>
+            <p>Skriv in ditt lösenord:</p>
+            <input type="password" name="pwd" value="abc123">
+            <br>
 
-            <!-- Här kan man spela upp en ljudfil -->
-            <h2>Här kan du höra hur en bilmorot låter</h2>
-            <audio controls>
-                    <source src="Carsound.mp3" type="audio/mpeg">
-            </audio>
-            
-            <br><br><br>
-
-            <!-- Ett formulär där använderen kan säga va de tycker om hemsidan -->
-            <h2>Var sidan till hjälp?</h2>
-            <form>
-                <fieldset>
-                    <legend>Din åsikt om hemsidan</legend>
-                    <p>Vad var bra med hemsidan?</p>
-                    <input type="text" name="Bra" value="Skriv något bra">
-                    <br>
-                    <p>Ditt kön</p>
-                    <input type="radio" name="kön" value="Man" checked> Man<br>
-                    <input type="radio" name="kön" value="Kvinna"> Kvinna<br>
-                    <br>
-                    <p>Vilka sidor var användbara</p>
-                    <input type="checkbox" name="Sida1" value="Sida1"> I have a bike<br>
-                    <input type="checkbox" name="Sida2" value="Sida2"> I have a car<br>
-                    <input type="checkbox" name="Sida3" value="Sida3"> I have a boat<br>
-                    <input type="checkbox" name="Sida4" value="Sida4"> I have a boat<br>
-                    <input type="checkbox" name="Sida5" value="Sida5"> I have a boat<br>
-                    <br>
-                    <p>Skriv in ditt telefonnummer</p>
-                    <input type="tel" name="Telefonnummer" value="0728471177"  required>
-                    <p>Länka till en bättre sida än denna:</p>
-                    <input type="url" name="url" value=""  required>
-                    <br>
-                    <p>Vilket märke är din favorit?</p>
-                    <select>
-                            <option value="mercedes">Mercedes</option>
-                            <option value="audi">Audi</option>
-                            <option value="BMW">BMW</option>
-                            <option value="Renault">Renault</option>
-                            <option value="Peugeot">Peugeot</option>
-                            <option value="Citroen">Citroen</option>
-                          </select>
-                    <br>
-                    <p>Skriv in ditt lösenord:</p>
-                    <input type="password" name="pwd" value="abc123">
-                    <br>
-
-                    <input type="submit" value="Submit">
-                </fieldset>
-            </form>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
 
 </body>
+
 </html>
